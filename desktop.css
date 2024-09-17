@@ -1,1 +1,18 @@
 /* desktop.css */
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); /* 투명한 배경 */
+    z-index: 10; /* 히어로 섹션 위에 위치 */
+    
+}
+
+.hero-section {
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('/assets/section1/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    height: 670px;
+  }
