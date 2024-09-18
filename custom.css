@@ -1,4 +1,100 @@
 @charset "UTF-8";
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.montserrat-thin {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-extralight {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-extrabold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-black {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@media (min-width: 700px) {
+  /* navbar */
+  /* section1 */
+  .hero-section {
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/assets/section1/hero.jpg") no-repeat center center/cover;
+    height: 670px; /* 화면 높이에 맞추고 싶다면 100vh를 사용 */
+    color: white;
+  }
+  /* section2 */
+  /* section3 */
+  /* section4 */
+  /* section5 */
+  /* section6 */
+  /* footer */
+}
+@media (max-width: 700px) {
+  /* navbar */
+  /* section1 */
+  /* section2 */
+  /* section3 */
+  /* section4 */
+  /* section5 */
+  /* section6 */
+  /* footer */
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -29,7 +125,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #23A6F0;
+  --bs-primary: #23a6f0;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -93,7 +189,7 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #23A6F0;
+  --bs-link-color: #23a6f0;
   --bs-link-color-rgb: 35, 166, 240;
   --bs-link-decoration: underline;
   --bs-link-hover-color: rgb(28, 132.8, 192);
@@ -2368,8 +2464,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(35, 166, 240, 0.25);
 }
 .form-check-input:checked {
-  background-color: #23A6F0;
-  border-color: #23A6F0;
+  background-color: #23a6f0;
+  border-color: #23a6f0;
 }
 .form-check-input:checked[type=checkbox] {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -2378,8 +2474,8 @@ textarea.form-control-lg {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #23A6F0;
-  border-color: #23A6F0;
+  background-color: #23a6f0;
+  border-color: #23a6f0;
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2469,7 +2565,7 @@ textarea.form-control-lg {
   height: 1rem;
   margin-top: -0.25rem;
   appearance: none;
-  background-color: #23A6F0;
+  background-color: #23a6f0;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2495,7 +2591,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   appearance: none;
-  background-color: #23A6F0;
+  background-color: #23a6f0;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2968,8 +3064,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #23A6F0;
-  --bs-btn-border-color: #23A6F0;
+  --bs-btn-bg: #23a6f0;
+  --bs-btn-border-color: #23a6f0;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: rgb(68, 179.35, 242.25);
   --bs-btn-hover-border-color: rgb(57, 174.9, 241.5);
@@ -2979,8 +3075,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: rgb(57, 174.9, 241.5);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #23A6F0;
-  --bs-btn-disabled-border-color: #23A6F0;
+  --bs-btn-disabled-bg: #23a6f0;
+  --bs-btn-disabled-border-color: #23a6f0;
 }
 
 .btn-secondary {
@@ -3103,19 +3199,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #23A6F0;
-  --bs-btn-border-color: #23A6F0;
+  --bs-btn-color: #23a6f0;
+  --bs-btn-border-color: #23a6f0;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #23A6F0;
-  --bs-btn-hover-border-color: #23A6F0;
+  --bs-btn-hover-bg: #23a6f0;
+  --bs-btn-hover-border-color: #23a6f0;
   --bs-btn-focus-shadow-rgb: 35, 166, 240;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #23A6F0;
-  --bs-btn-active-border-color: #23A6F0;
+  --bs-btn-active-bg: #23a6f0;
+  --bs-btn-active-border-color: #23a6f0;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #23A6F0;
+  --bs-btn-disabled-color: #23a6f0;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #23A6F0;
+  --bs-btn-disabled-border-color: #23a6f0;
   --bs-gradient: none;
 }
 
@@ -3357,7 +3453,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: var(--bs-body-color);
   --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #23A6F0;
+  --bs-dropdown-link-active-bg: #23a6f0;
   --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -3623,7 +3719,7 @@ textarea.form-control-lg {
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #23A6F0;
+  --bs-dropdown-link-active-bg: #23a6f0;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
@@ -3806,7 +3902,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #23A6F0;
+  --bs-nav-pills-link-active-bg: #23a6f0;
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
@@ -4663,8 +4759,8 @@ textarea.form-control-lg {
   --bs-pagination-focus-bg: var(--bs-secondary-bg);
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(35, 166, 240, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #23A6F0;
-  --bs-pagination-active-border-color: #23A6F0;
+  --bs-pagination-active-bg: #23a6f0;
+  --bs-pagination-active-border-color: #23a6f0;
   --bs-pagination-disabled-color: var(--bs-secondary-color);
   --bs-pagination-disabled-bg: var(--bs-secondary-bg);
   --bs-pagination-disabled-border-color: var(--bs-border-color);
@@ -4876,7 +4972,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: var(--bs-border-radius);
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #23A6F0;
+  --bs-progress-bar-bg: #23a6f0;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -4941,8 +5037,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: var(--bs-secondary-color);
   --bs-list-group-disabled-bg: var(--bs-body-bg);
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #23A6F0;
-  --bs-list-group-active-border-color: #23A6F0;
+  --bs-list-group-active-bg: #23a6f0;
+  --bs-list-group-active-border-color: #23a6f0;
   display: flex;
   flex-direction: column;
   padding-left: 0;

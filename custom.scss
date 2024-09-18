@@ -1,19 +1,125 @@
 // custom.scss
-$primary: #23A6F0;
-$secondary-1: #40BB15;
-$secondary-2: #3C403D;
-$text-color:#252B42;
-$second-text-color:#737373;
-// $light-text-color: #FFFFFF;
-$dark-background-color:#252B42;
-// $light-background-color:#FFFFFF;
-$hover-color:#2A7CC7;
-$disabled-element-color:#8EC2F2;
-$muted-color:#BDBDBD;
-$success-color:#2DC071;
-$alert-color:#E77C40;
-$danger-color:#E74040;
-$light-gray-1:#FAFAFA;
-$light-gray-2:#ECECEC;
+
+//Variable
+$primary: #23a6f0;
+$secondary-1: #40bb15;
+$secondary-2: #3c403d;
+$text-color: #252b42;
+$second-text-color: #737373;
+$dark-background-color: #252b42;
+$hover-color: #2a7cc7;
+$disabled-element-color: #8ec2f2;
+$muted-color: #bdbdbd;
+$success-color: #2dc071;
+$alert-color: #e77c40;
+$danger-color: #e74040;
+$light-gray-1: #fafafa;
+$light-gray-2: #ececec;
+
+$font-family-montserrat: "Montserrat", sans-serif;
+$font-optical-sizing: auto;
+
+
+
+* {
+  font-family: $font-family-montserrat;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//Font
+@mixin montserrat-font($weight) {
+  font-family: $font-family-montserrat;
+  font-optical-sizing: $font-optical-sizing;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+.montserrat-thin {
+  @include montserrat-font(100);
+}
+
+.montserrat-extralight {
+  @include montserrat-font(200);
+}
+
+.montserrat-light {
+  @include montserrat-font(300);
+}
+
+.montserrat-regular {
+  @include montserrat-font(400);
+}
+
+.montserrat-medium {
+  @include montserrat-font(500);
+}
+
+.montserrat-semibold {
+  @include montserrat-font(600);
+}
+
+.montserrat-bold {
+  @include montserrat-font(700);
+}
+
+.montserrat-extrabold {
+  @include montserrat-font(800);
+}
+
+.montserrat-black {
+  @include montserrat-font(900);
+}
+
+//desktop
+@media (min-width: 700px) {
+  /* navbar */
+
+  /* section1 */
+
+  .hero-section {
+    position: relative;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url("/assets/section1/hero.jpg") no-repeat center center/cover;
+    height: 670px; 
+    color: white;
+  }
+
+  /* section2 */
+
+  /* section3 */
+
+  /* section4 */
+
+  /* section5 */
+
+  /* section6 */
+
+  /* footer */
+}
+
+//mobile
+@media (max-width: 700px) {
+  /* navbar */
+
+  /* section1 */
+
+  /* section2 */
+
+  /* section3 */
+
+  /* section4 */
+
+  /* section5 */
+
+  /* section6 */
+
+  /* footer */
+}
 
 @import "node_modules/bootstrap/scss/bootstrap";
