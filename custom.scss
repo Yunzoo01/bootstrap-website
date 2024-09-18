@@ -19,6 +19,7 @@ $light-gray-2: #ececec;
 $font-family-montserrat: "Montserrat", sans-serif;
 $font-optical-sizing: auto;
 
+
 * {
   font-family: $font-family-montserrat;
   box-sizing: border-box;
@@ -72,15 +73,17 @@ $font-optical-sizing: auto;
 
 //desktop
 @media (min-width: 700px) {
-  /* navbar */
-
+  
+    .d-none-desktop {
+        display: none !important;
+    }
   /* section1 */
 
   .hero-section {
     position: relative;
     background: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.7),
+        #000000,
         rgba(0, 0, 0, 0.1)
       ),
       url("/assets/section1/hero.jpg") no-repeat center center/cover;
@@ -103,9 +106,37 @@ $font-optical-sizing: auto;
 
 //mobile
 @media (max-width: 700px) {
+    .d-none-mobile {
+        display: none !important;
+    }
+
   /* navbar */
+  .nav-menu {
+    padding: 1rem;
+    background-color: $dark-background-color;
+    flex-direction: row;
+  }
+
+ .nav{
+    flex-direction: column;
+ }
+
+
+
+
 
   /* section1 */
+  .hero-section {
+    position: relative;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url("/assets/section1/hero.jpg") no-repeat center center/cover;
+    height: 670px;
+    color: white;
+  }
 
   /* section2 */
 
