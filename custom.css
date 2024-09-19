@@ -69,7 +69,7 @@
   font-style: normal;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 576px) {
   .d-none-desktop {
     display: none !important;
   }
