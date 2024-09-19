@@ -19,19 +19,18 @@
   </head>
 
   <body>
-    <section class="hero-section">
+    <section class="hero-section-desktop">
       <nav>
         <div
-          class="nav-menu d-flex justify-content-evenly align-items-center px-5 py-3"
+          class="nav-menu align-items-center"
         >
-          <div class="d-flex align-items-center gap-5">
             <!-- 브랜드명 -->
-            <div class="d-flex">
+            <div class="d-flex w-100 text-white justify-content-sm-between">
               <a class="navbar-brand montserrat-bold fs-4" href="#"
                 >BrandName</a
               >
 
-              <div class="d-inline-block">
+              <div class="nav-mobile-toggle">
                 <a href="#" class="d-none-desktop">
                   <img
                     src="assets/section1/icn search .icn-xs.png"
@@ -48,15 +47,14 @@
                   <img src="assets/section1/icn menu .icn-xs.png" alt="Menu" />
                 </a>
               </div>
-            </div>
-          </div>
+
+
           <!-- 네비게이션 링크들 -->
           <ul
-            class="nav d-flex montserrat-semibold"
-            style="font-size: 0.875rem"
+            class="nav-mobile-menu nav no-flex montserrat-semibold  "
           >
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white " href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Product</a>
@@ -68,15 +66,14 @@
               <a class="nav-link text-white" href="#">Contact</a>
             </li>
           </ul>
+          
 
           <div
             class="d-flex gap-5 align-items-center montserrat-semibold"
-            style="font-size: 0.875rem"
             ;
           >
             <a
               class="nav-link text-white d-none-mobile"
-              style="font-size: 0.875rem"
               href="#"
               >Login</a
             >
@@ -91,11 +88,13 @@
             </button>
           </div>
         </div>
+      </div>
+
       </nav>
 
       <!-- Hero 섹션 -->
       <div
-        class="container-fluid text-center d-flex flex-column justify-content-center"
+        class="container-fluid text-center d-flex flex-column justify-content-center hero-section-mobile"
       >
         <div class="row">
           <div class="col-12 hero-text">

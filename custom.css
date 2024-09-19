@@ -69,12 +69,16 @@
   font-style: normal;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 575px) {
   .d-none-desktop {
     display: none !important;
   }
+  /* nav */
+  .nav-menu {
+    padding: 16px 60px;
+  }
   /* section1 */
-  .hero-section {
+  .hero-section-desktop {
     position: relative;
     background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.1)), url("/assets/section1/hero.jpg") no-repeat center center/cover;
     height: 670px;
@@ -87,23 +91,42 @@
   /* section6 */
   /* footer */
 }
-@media (max-width: 700px) {
+@media (max-width: 575px) {
   .d-none-mobile {
     display: none !important;
   }
   /* navbar */
   .nav-menu {
-    padding: 1rem;
     background-color: #252b42;
-    flex-direction: row;
-  }
-  .nav {
     flex-direction: column;
+    height: 532px;
+    padding: 23px 35px;
+    justify-content: space-around;
+    position: relative;
+  }
+  .nav-mobile-menu {
+    display: flex;
+    position: absolute;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center;
+    gap: 30px; /* 메뉴 항목 간 간격 */
+    list-style: none;
+    font-size: 30px;
+    line-height: 45px;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 수평 및 수직 중앙으로 이동 */
+  }
+  .nav-mobile-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
   /* section1 */
-  .hero-section {
+  .hero-section-mobile {
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/assets/section1/hero.jpg") no-repeat center center/cover;
+    background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.1)), url("/assets/section1/hero.jpg") no-repeat center center/cover;
     height: 670px;
     color: white;
   }
