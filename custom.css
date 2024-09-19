@@ -483,13 +483,16 @@
   }
   /* footer */
   /* part6 */
+  .part6-wrapper {
+    width: 100%;
+    padding-left: 20%;
+  }
   .custom-title3 {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
-    width: 70%;
   }
   .custom-subtitle3 {
     font-weight: 500;
@@ -497,7 +500,17 @@
     line-height: 143%;
     letter-spacing: 0.2px;
     color: #252B42;
-    width: 50%;
+  }
+  #btn-custom5 {
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 10%;
   }
   /* nav */
   #footer-nav,
