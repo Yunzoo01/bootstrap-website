@@ -71,18 +71,16 @@ $font-optical-sizing: auto;
 }
 
 //desktop
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   /* navbar */
 
   /* section1 */
 
   .hero-section {
     position: relative;
-    background: linear-gradient(
-        to right,
+    background: linear-gradient(to right,
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.1)
-      ),
+        rgba(0, 0, 0, 0.1)),
       url("/assets/section1/hero.jpg") no-repeat center center/cover;
     height: 670px;
     color: white;
@@ -95,14 +93,226 @@ $font-optical-sizing: auto;
   /* section4 */
 
   /* section5 */
+  #part4 {
+    background-color: #252B42;
+    color: white;
+    padding: 10vh 0 5vh 0;
+  }
+
+  #part4 h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 142%;
+  }
+
+  #part4 p {
+    width: 66%;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 143%;
+    margin-bottom: 15%;
+  }
+
+  #free,
+  #silver,
+  #gold {
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin-bottom: 7vh;
+    border: 1px solid #23A6F0;
+    border-radius: 10px;
+
+  }
+
+  #silver {
+    position: relative;
+  }
+
+  #silver::before {
+    content: url("./assets/Section05/circle-box\ xs-circle.png");
+    position: absolute;
+    top: -5%;
+    right: 5%;
+  }
+
+  .custom-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+  }
+
+  .custom-subtitle {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #737373;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #23A6F0;
+  }
+
+  .unit1 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #23A6F0;
+  }
+
+  .unit2 {
+    font-weight: 600;
+    font-size: 0.825rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #8EC2F2;
+  }
+
+  .conditions-box div {
+    font-size: 0.825rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+  }
+
+  .conditions-box img {
+    vertical-align: middle;
+  }
+
+  .btn-container {
+    width: 100%;
+  }
+
+  #btn-custom1,
+  #btn-custom2,
+  #btn-custom3 {
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 30%;
+  }
 
   /* section6 */
+  #part5 {
+    background-image: url("./assets/Section06/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    padding: 15vh 0;
+  }
+
+  #appointment-form {
+    width: 80%;
+  }
+
+  .custom-subtitle2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-left: -3%;
+  }
+
+  .custom-title2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+  }
+
+  #part5 input,
+  #part5 select {
+    height: 6.25vh;
+    box-shadow: 0 0 1px 1px #BDBDBD;
+  }
+
+  #part5 textarea {
+    box-shadow: 0 0 1px 1px #BDBDBD;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder,
+  #part5 select,
+  .select-option {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #BDBDBD;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder {
+    padding-left: 3%;
+  }
+
+  #part5 select,
+  .select-option {
+    padding-left: 7%;
+  }
+
+  #part5 textarea::placeholder {
+    padding-top: 3%;
+  }
+
+  #btn-custom4 {
+    width: 100%;
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 0%;
+  }
 
   /* footer */
+  /* part6 */
+  #part6 h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+  }
+
+  #part6 p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+  }
+
+  /* nav */
+  #footer-nav,
+  #part7 {
+    background-color: #252B42;
+    color: white;
+  }
+
+  /* part7 */
 }
 
 //mobile
-@media (max-width: 700px) {
+@media (max-width: 575px) {
   /* navbar */
 
   /* section1 */
@@ -117,15 +327,15 @@ $font-optical-sizing: auto;
   #part4 {
     background-color: #252B42;
     color: white;
-    padding: 10vh 0;
+    padding: 10vh 0 5vh 0;
   }
-  
+
   #part4 h1 {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 142%;
   }
-  
+
   #part4 p {
     width: 66%;
     font-size: 0.875rem;
@@ -133,13 +343,30 @@ $font-optical-sizing: auto;
     line-height: 143%;
     margin-bottom: 15%;
   }
-  
-  #free {
+
+  #free,
+  #silver,
+  #gold {
     background-color: white;
     color: black;
     width: 80%;
+    margin-bottom: 7vh;
+    border: 1px solid #23A6F0;
+    border-radius: 10px;
+
   }
-  
+
+  #silver {
+    position: relative;
+  }
+
+  #silver::before {
+    content: url("./assets/Section05/circle-box\ xs-circle.png");
+    position: absolute;
+    top: -5%;
+    right: 5%;
+  }
+
   .custom-title {
     font-weight: 700;
     font-size: 1.5rem;
@@ -147,7 +374,7 @@ $font-optical-sizing: auto;
     letter-spacing: 0.1px;
     color: #252B42;
   }
-  
+
   .custom-subtitle {
     font-weight: 700;
     font-size: 1rem;
@@ -155,7 +382,7 @@ $font-optical-sizing: auto;
     letter-spacing: 0.1px;
     color: #737373;
   }
-  
+
   .price {
     font-weight: 700;
     font-size: 2.5rem;
@@ -163,7 +390,7 @@ $font-optical-sizing: auto;
     letter-spacing: 0.2px;
     color: #23A6F0;
   }
-  
+
   .unit1 {
     font-weight: 700;
     font-size: 1rem;
@@ -171,7 +398,7 @@ $font-optical-sizing: auto;
     letter-spacing: 0.1px;
     color: #23A6F0;
   }
-  
+
   .unit2 {
     font-weight: 600;
     font-size: 0.825rem;
@@ -179,15 +406,142 @@ $font-optical-sizing: auto;
     letter-spacing: 0.2px;
     color: #8EC2F2;
   }
-  
-  #conditions-box div {
+
+  .conditions-box div {
     font-size: 0.825rem;
     line-height: 171%;
     letter-spacing: 0.2px;
   }
+
+  .conditions-box img {
+    vertical-align: middle;
+  }
+
+  .btn-container {
+    width: 100%;
+  }
+
+  #btn-custom1,
+  #btn-custom2,
+  #btn-custom3 {
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 30%;
+  }
+
   /* section6 */
+  #part5 {
+    background-image: url("./assets/Section06/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    padding: 15vh 0;
+  }
+
+  #appointment-form {
+    width: 80%;
+  }
+
+  .custom-subtitle2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-left: -3%;
+  }
+
+  .custom-title2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+  }
+
+  #part5 input,
+  #part5 select {
+    height: 6.25vh;
+    box-shadow: 0 0 1px 1px #BDBDBD;
+  }
+
+  #part5 textarea {
+    box-shadow: 0 0 1px 1px #BDBDBD;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder,
+  #part5 select,
+  .select-option {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #BDBDBD;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder {
+    padding-left: 3%;
+  }
+
+  #part5 select,
+  .select-option {
+    padding-left: 7%;
+  }
+
+  #part5 textarea::placeholder {
+    padding-top: 3%;
+  }
+
+  #btn-custom4 {
+    width: 100%;
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 0%;
+  }
 
   /* footer */
+  /* part6 */
+  .custom-title3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    width: 70%;
+  }
+
+  .custom-subtitle3 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    width: 50%;
+  }
+
+  /* nav */
+  #footer-nav,
+  #part7 {
+    background-color: #252B42;
+    color: white;
+  }
+
+  /* part7 */
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
