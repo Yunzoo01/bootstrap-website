@@ -305,6 +305,7 @@
   }
   /* nav */
   #footer-nav {
+    width: 100%;
     background-color: #252B42;
     color: white;
     padding: 0 14%;
@@ -575,7 +576,7 @@
   }
   .custom-title3 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
@@ -641,6 +642,7 @@
     font-size: 0.875rem;
     line-height: 171%;
     letter-spacing: 0.2px;
+    width: 95%;
   }
 }
 /*!
