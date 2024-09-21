@@ -1,0 +1,989 @@
+// custom.scss
+
+//Variables
+$primary: #23a6f0;
+$secondary-1: #40bb15;
+$secondary-2: #3c403d;
+$text-color: #252b42;
+$second-text-color: #737373;
+$dark-background-color: #252b42;
+$hover-color: #2a7cc7;
+$disabled-element-color: #8ec2f2;
+$muted-color: #bdbdbd;
+$success-color: #2dc071;
+$alert-color: #e77c40;
+$danger-color: #e74040;
+$light-gray-1: #fafafa;
+$light-gray-2: #ececec;
+
+$font-family-montserrat: "Montserrat", sans-serif;
+$font-optical-sizing: auto;
+
+* {
+  font-family: $font-family-montserrat;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-dark-background-color {
+  background-color: $dark-background-color;
+}
+
+.text-star{
+  color: #F3CD03;
+}
+
+.text-second-color{
+  color: $second-text-color;
+}
+
+//Font
+@mixin montserrat-font($weight) {
+  font-family: $font-family-montserrat;
+  font-optical-sizing: $font-optical-sizing;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+.montserrat-thin {
+  @include montserrat-font(100);
+}
+
+.montserrat-extralight {
+  @include montserrat-font(200);
+}
+
+.montserrat-light {
+  @include montserrat-font(300);
+}
+
+.montserrat-regular {
+  @include montserrat-font(400);
+}
+
+.montserrat-medium {
+  @include montserrat-font(500);
+}
+
+.montserrat-semibold {
+  @include montserrat-font(600);
+}
+
+.montserrat-bold {
+  @include montserrat-font(700);
+}
+
+.montserrat-extrabold {
+  @include montserrat-font(800);
+}
+
+.montserrat-black {
+  @include montserrat-font(900);
+}
+
+//desktop
+@media (min-width: 576px) {
+  .d-none-desktop {
+    display: none !important;
+  }
+  .desktop-line-break::after {
+    content: '\A'; /* 줄바꿈 */
+    white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
+}
+
+  /* nav */
+  .nav-menu {
+    padding: 20px 0;
+  }
+  /* section1 */
+
+  .hero-section-desktop {
+    position: relative;
+    background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.1)),
+      url("/assets/section1/hero.jpg") no-repeat center center/cover;
+    height: 670px;
+    color: white;
+    padding: 0 13.54%;
+  }
+
+  .hero-text h1 {
+    font-size: 58px;
+    width: 599px;
+    margin-top: 112px;
+  }
+
+  .hero-text p {
+    padding: 35px 0;
+    width: 376px;
+  }
+
+  .btn-set {
+    border-radius: 37px;
+    padding: 15px 36px;
+  }
+
+  .btn-transparent {
+    color: #ffffff; /* 텍스트 색상 */
+    border: 2px solid #ffffff; /* 테두리 흰색 */
+    background-color: transparent; /* 배경 투명 */
+  }
+
+  /* section2 */
+  .section2-container {
+    padding: 6.597% 13.54%;
+  }
+
+  .section2-container img{
+    margin-bottom: 30px;
+
+  }
+  .section2-container h5{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .section2-container p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  /* section3 */
+
+  .section3-container{
+    background-color: #8EC2F2;
+    padding: 112px 10.42%;
+  }xw
+
+  .section3-container h2{
+    font-size: 40px;
+  }
+
+  .section3-container p{
+    font-size: 14px;
+  }
+  .section3-white-block-container{
+    gap: 30px;
+  }
+
+  .section3-white-block{
+    padding: 30px 40px;
+    position: relative;
+    margin-top: 100px;
+    margin: 68px 38px 33px 18px;
+  }
+
+  .section3-white-block img{
+    position: absolute;
+    top: 25px;
+    left: -50px; 
+  }
+
+
+  /* section4 */
+  .section4-container{
+    padding: 112px 0;
+    overflow:hidden;
+  }
+
+  .section4-container h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+
+  .section4-container p{
+    font-size: 14px;
+    margin: 30px 19.5px;
+    line-height: 20px;
+  }
+
+  .section4-card {
+    position: relative;
+    width: 331px; /* 카드의 너비 */
+    overflow: hidden; /* 이미지가 둥근 모서리 밖으로 나가지 않도록 */
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0; /* 카드의 하단에 오버레이가 위치 */
+    left: 0;
+    width: 100%;
+    padding: 20px; /* 텍스트와 버튼 간의 간격 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* 그라디언트 오버레이 */
+    color: white; /* 텍스트를 흰색으로 설정 */
+    border: none;
+  }
+  
+
+
+  /* section5 */
+  #part4 {
+    background-color: #252b42;
+    color: white;
+    padding: 10vh 0 5vh 0;
+  }
+
+  #part4 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+  }
+
+  #part4 p {
+    width: 33%;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    margin-bottom: 10%;
+  }
+
+  #plans-container-desktop {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #free,
+  #silver,
+  #gold {
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin-bottom: 7vh;
+    border: 1px solid #23a6f0;
+    border-radius: 10px;
+  }
+
+  #silver {
+    position: relative;
+  }
+
+  #silver::before {
+    content: url("./assets/Section05/circle-box\ xs-circle.png");
+    position: absolute;
+    top: -5%;
+    right: 5%;
+  }
+
+  .custom-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252b42;
+  }
+
+  .custom-subtitle {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #737373;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #23a6f0;
+  }
+
+  .unit1 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #23a6f0;
+  }
+
+  .unit2 {
+    font-weight: 600;
+    font-size: 0.825rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #8ec2f2;
+  }
+
+  .conditions-box div {
+    font-size: 0.825rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+  }
+
+  .conditions-box img {
+    vertical-align: middle;
+  }
+
+  .btn-container {
+    width: 100%;
+  }
+
+  #btn-custom1,
+  #btn-custom2,
+  #btn-custom3 {
+    background: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 30%;
+  }
+
+  /* section6 */
+  #part5 {
+    background-image: url("./assets/Section06/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    padding: 15vh 30vh;
+  }
+
+  #appointment-form {
+    width: 58%;
+  }
+
+  .custom-subtitle2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+  }
+
+  .custom-title2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252b42;
+  }
+
+  #name-mobile,
+  #email-mobile {
+    display: none;
+  }
+
+  #name-mobile,
+  #email-mobile {
+    display: none;
+  }
+
+  #part5 input,
+  #part5 select {
+    height: 7vh;
+    box-shadow: 0 0 1px 1px #E6E6E6;
+    background-color: #F9F9F9;
+  }
+
+  #part5 textarea {
+    box-shadow: 0 0 1px 1px #E6E6E6;
+    background-color: #F9F9F9;
+  }
+
+  #part5 input::placeholder {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+  #part5 textarea::placeholder,
+  #part5 select,
+  .select-option {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #bdbdbd;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder {
+    padding-left: 3%;
+  }
+
+  #part5 select,
+  .select-option {
+    padding-left: 7%;
+  }
+
+  #part5 textarea::placeholder {
+    padding-top: 3%;
+  }
+
+  #btn-custom4 {
+    width: 36%;
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 2.5% 0%;
+  }
+
+  /* footer */
+  /* part6 */
+  .part6-wrapper {
+    width: 100%;
+    padding: 0 14%;
+  }
+
+  .custom-title3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    width: 100%;
+  }
+
+  .custom-subtitle3 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+    width: 80%;
+  }
+
+  #btn-custom5 {
+    background: #23A6F0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 10%;
+    width: 13vw;
+    height: 8vh;
+  }
+
+  /* nav */
+  #footer-nav {
+    width: 100%;
+    background-color: #252B42;
+    color: white;
+    padding: 0 14%;
+    gap: 7%;
+  }
+
+  #footer-nav {
+    padding-top: 7vh;
+  }
+
+  #footer-nav h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+  }
+
+  #footer-nav span {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+  }
+
+  /* part7 */
+  #part7 {
+    background-color: white;
+    color: #737373;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    padding: 0 15%;
+  }
+
+  #part7 p {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    padding: 3% 0 1% 0;
+  }
+
+  #sns {
+    padding: 3% 4% 1% 4%;
+  }
+
+  #phone-mobile,
+  #map-mobile,
+  #mail-mobile,
+  #fb-mobile,
+  #insta-mobile,
+  #x-mobile,
+  #youtube-mobile,
+  #address-detail {
+    display: none;
+  }
+}
+
+
+
+//mobile
+@media (max-width: 575px) {
+  .d-none-mobile {
+    display: none !important;
+  }
+  .mobile-line-break::after {
+    content: '\A'; /* 줄바꿈 */
+    white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
+}
+
+  /* navbar */
+  .nav-menu {
+    background-color: $dark-background-color;
+    flex-direction: column;
+    height: 532px;
+    padding: 23px 35px;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .nav-mobile-menu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    /* 세로 정렬 */
+    align-items: center;
+    gap: 30px;
+    /* 메뉴 항목 간 간격 */
+    list-style: none;
+    font-size: 30px;
+    line-height: 45px;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 수평 및 수직 중앙으로 이동 */
+  }
+  .nav-mobile-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  /* section1 */
+  .hero-section-mobile {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/assets/section1/hero.jpg") no-repeat center center / cover;
+
+    height: 670px;
+    color: white;
+    padding: 80px 50px 0 50px;
+    background-position: 70% 0%;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    padding: 40px 0;
+  }
+
+  .btn-set {
+    border-radius: 37px;
+    padding: 10px 36px;
+  }
+
+  .btn-transparent {
+    color: $primary; /* 텍스트 색상 */
+    border: 2px solid $primary; /* 테두리 흰색 */
+    background-color: transparent; /* 배경 투명 */
+  }
+
+  /* section2 */
+  .section2-container {
+    padding: 80px 42.5px;
+  }
+
+  .section2-container img{
+    margin-bottom: 30px;
+
+  }
+  .section2-container h5{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .section2-container p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* section3 */
+  .section3-container{
+    background-color: #8EC2F2;
+    padding: 75px 42px 35px 42px;
+  }
+
+  .section3-container h2{
+    font-size: 40px;
+  }
+
+  .section3-container p{
+    font-size: 14px;
+  }
+
+  .section3-white-block{
+    padding: 30px 40px;
+    margin-bottom: 30px;
+  }
+
+  .section3-white-block p{
+    width: 180px;
+  }
+
+  /* section4 */
+  .section4-container{
+    background-color: $dark-background-color;
+    padding: 70px 42px;
+  }
+
+  .section4-container h2{
+    font-size: 40px;
+    margin: 0 38.5px;
+    line-height: 57px;
+    width: 250px;
+    letter-spacing: 2px;
+  }
+
+  .section4-container p{
+    font-size: 14px;
+    margin: 30px 19.5px;
+    line-height: 20px;
+  }
+
+  .section4-card {
+    position: relative;
+    width: 331px; /* 카드의 너비 */
+    overflow: hidden; /* 이미지가 둥근 모서리 밖으로 나가지 않도록 */
+    border: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0; /* 카드의 하단에 오버레이가 위치 */
+    left: 0;
+    width: 100%;
+    padding: 20px; /* 텍스트와 버튼 간의 간격 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* 그라디언트 오버레이 */
+    color: white; /* 텍스트를 흰색으로 설정 */
+    border: none;
+  }
+  
+
+  /* section5 */
+  #part4 {
+    background-color: #252b42;
+    color: white;
+    padding: 10vh 0 5vh 0;
+  }
+
+  #part4 h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 142%;
+  }
+
+  #part4 p {
+    width: 66%;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 143%;
+    margin-bottom: 15%;
+  }
+
+  #free,
+  #silver,
+  #gold {
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin-bottom: 7vh;
+    border: 1px solid #23a6f0;
+    border-radius: 10px;
+  }
+
+  #silver {
+    position: relative;
+  }
+
+  #silver::before {
+    content: url("./assets/Section05/circle-box\ xs-circle.png");
+    position: absolute;
+    top: -5%;
+    right: 5%;
+  }
+
+  .custom-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252b42;
+  }
+
+  .custom-subtitle {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #737373;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #23a6f0;
+  }
+
+  .unit1 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #23a6f0;
+  }
+
+  .unit2 {
+    font-weight: 600;
+    font-size: 0.825rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #8ec2f2;
+  }
+
+  .conditions-box div {
+    font-size: 0.825rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+  }
+
+  .conditions-box img {
+    vertical-align: middle;
+  }
+
+  .btn-container {
+    width: 100%;
+  }
+
+  #btn-custom1,
+  #btn-custom2,
+  #btn-custom3 {
+    background: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 30%;
+  }
+
+  /* section6 */
+  #part5 {
+    background-image: url("./assets/Section06/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    padding: 15vh 0;
+  }
+
+  #appointment-form {
+    width: 80%;
+  }
+
+  .custom-subtitle2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    margin-left: -3%;
+  }
+
+  .custom-title2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252b42;
+  }
+
+  #name-desktop,
+  #email-desktop {
+    display: none;
+  }
+
+  #name-desktop,
+  #email-desktop {
+    display: none;
+  }
+
+  #part5 input,
+  #part5 select {
+    height: 6.25vh;
+    box-shadow: 0 0 1px 1px #bdbdbd;
+  }
+
+  #part5 textarea {
+    box-shadow: 0 0 1px 1px #bdbdbd;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder,
+  #part5 select,
+  .select-option {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #bdbdbd;
+  }
+
+  #part5 input::placeholder,
+  #part5 textarea::placeholder {
+    padding-left: 3%;
+  }
+
+  #part5 select,
+  .select-option {
+    padding-left: 7%;
+  }
+
+  #part5 textarea::placeholder {
+    padding-top: 3%;
+  }
+
+  #btn-custom4 {
+    width: 100%;
+    background: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 0%;
+  }
+
+  /* footer */
+  /* part6 */
+  .part6-wrapper {
+    width: 100%;
+    padding: 0 15%;
+  }
+
+  .custom-title3 {
+    font-weight: 700;
+    font-size: 1.45rem;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    width: 100%;
+  }
+
+  .custom-subtitle3 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    width: 80%;
+  }
+
+  #btn-custom5 {
+    background: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.825rem;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 5% 10%;
+  }
+
+  /* nav */
+  #footer-nav,
+  #part7 {
+    background-color: #252b42;
+    color: white;
+    padding: 0 15%;
+  }
+
+  #footer-nav {
+    padding-top: 7vh;
+  }
+
+  #footer-nav h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+  }
+
+  #footer-nav span {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+  }
+
+  #phone-desktop,
+  #map-desktop,
+  #mail-desktop,
+  #address-detail,
+  #fb-desktop,
+  #insta-desktop,
+  #x-desktop {
+    display: none;
+  }
+
+  /* part7 */
+  #part7 {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+  }
+
+  #part7 p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    width: 95%;
+  }
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
